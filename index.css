@@ -7,10 +7,10 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: skyblue;
+    border: .1em solid wheat;
 }
 header{
-    background: blue;
+    background: #A3C1AD;
     padding: 1.6% 0;
 }
 nav{
@@ -19,5 +19,44 @@ nav{
     color: whitesmoke;
     font-size: 2em;
     font-weight: 800;
+    cursor: pointer;
+}
+img{
+    width: 60%;
+    border-radius: .8em;
+    box-shadow: .1em .1em .2em .4em rgba(0, 0, 0, 0.071);
+}
+
+/*
+Product
+*/
+main{
+    padding: 4% 4%;
+}
+.products{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 4%;
+}
+.products-item{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: .8em;
+}
+.products-item_details{
+    font-size: 1.6em;
+}
+.column{
+    font-weight: 800;
+}
+.btn-primary{
+    background-color: #00BFFF;
+    width: 40%;
+    height: 6vh;
+    border: none;
+    border-radius: .8em;
+    font-size: 2em;
+    color: white;
+    box-shadow: .1em .1em .2em .4em #00bfff1b;
     cursor: pointer;
 }

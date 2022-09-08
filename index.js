@@ -21,6 +21,15 @@ class ShoppingCart{
  * PUBLIC VARIABLES
  */
 let main = document.querySelector('.main');
+let buyBtn = document.querySelectorAll('.add-to_cart-btn');
+
+/**
+ *Converting Nodelist to Array 
+ */
+
+function addToCart(){
+
+}
 /**
  * CART ITEMS
  */
