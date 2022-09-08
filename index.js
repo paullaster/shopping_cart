@@ -12,4 +12,37 @@ class ShoppingCart{
         this.price = price;
         this.remove = remove;
     }
+    static displayCart(...cartInstances){
+        return `Cart Instance Cart Items stay here`;
+    }
 }
+
+/**
+ * PUBLIC VARIABLES
+ */
+let main = document.querySelector('.main');
+/**
+ * CART ITEMS
+ */
+function getCartItems(){
+    let cartContent = ShoppingCart.displayCart();
+    console.log(typeof(cartContent));
+    clearMainContent();
+    let mainCartItems = document.createElement('div');
+    mainCartItems.innerText = cartContent;
+
+    //Append mainCartItemsto the main.
+    main.appendChild(mainCartItems);
+}
+/**
+ * WEB EVENT LISTENERS
+ */
+const cart = document.querySelector('.cart-header');
+cart.addEventListener('click', getCartItems);
+
+/**
+ * CLEAR CONTENT IN THE MAIN
+ */
+function clearMainContent(){
+    main.innerHTML = '';
+};
