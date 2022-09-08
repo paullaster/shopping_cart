@@ -31,7 +31,7 @@ img{
 Product
 */
 main{
-    padding: 4% 4%;
+    padding: 4% 4% 0 16%;
 }
 .products{
     display: grid;
